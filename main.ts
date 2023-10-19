@@ -1,6 +1,6 @@
 /**
-* Use this file to define custom functions and blocks.
-* Read more at https://makecode.microbit.org/blocks/custom
+* Use this file to define custom functions and blocks#
+* Read more at https://makecode#microbit#org/blocks/custom
 */
 
 enum MyEnum {
@@ -13,8 +13,8 @@ enum MyEnum {
 /**
 * Custom blocks
 */
-//% block="Custom" weight=100 color=#0fbc11 icon=""
-namespace custom {
+//% block="MoonLEDS" weight=100 color=#0fbc11 icon=""
+namespace MoonLEDS {
     /**
     * TODO: describe your function here
     * @param n describe parameter here, eg: 5
@@ -22,8 +22,15 @@ namespace custom {
     * @param e describe parameter here
     */
     //% block
-    export function foo(n: number, s: string, e: MyEnum): void {
-        // Add code here
+    export function allLEDSOn(n: number, s: string, e: MyEnum): void {
+        basic.showLeds(`
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        `)
+        
     }
 
     /**
